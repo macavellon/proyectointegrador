@@ -143,7 +143,7 @@ main {
 
 }
 .footer-top img {
-    width: 300px;
+    width: 350px;
     border-radius: 20px;
 }
 
@@ -245,11 +245,20 @@ padding: 35px 30px;
     padding: 20px;
     align-items: center;
     justify-content: left;
-    gap:15px;
+    gap:20px;
+    margin-left: 20px;
 }
 
 .logos-redes a img {
     width:20px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:50px;
 }
 
 .footer-bottom { 
