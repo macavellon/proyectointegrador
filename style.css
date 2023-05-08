@@ -72,7 +72,7 @@ main {
 }
 
 #hero img {
-    width: 300px;
+    width: 250px;
 
 }
 
@@ -134,4 +134,135 @@ main {
 #info a {
     font-weight: 600;
     color: black;
+}
+
+.footer-top {
+    display:flex;
+    align-items: center;
+    gap:80px;
+
+}
+.footer-top img {
+    width: 300px;
+    border-radius: 20px;
+}
+
+.footer-top-info{
+    display:flex;
+    gap:20px;
+    flex-direction: column;
+    
+
+}
+.cards-container {
+    display:flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap:20px;
+}
+
+#info-cards {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+    gap:50px;
+    max-width: 1200px;
+
+}
+
+#info-cards h2 {
+    font-size: 42px;
+    font-weight: 800;
+}
+
+.cards-cards {
+width: 300px;
+height: 290px;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+background-color: blueviolet;
+border-radius:10px ;
+gap:16px;
+padding: 35px 30px;
+}
+
+.cards-cards img {
+    width: 50px;
+    border-radius: 20px;
+}
+
+.cards-cards h3 {
+    font-weight: 600;
+    font-size: 30px;
+}
+.cards-cards p {
+    font-size:17px;
+}
+.contacto {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    text-align: left;
+    justify-content:center;
+    
+}
+.contacto h3{
+    font-size:35px;
+}
+.contacto-contenedor {
+    display:flex;
+    gap:30px
+}
+.contacto-datos {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.contacto-datos h4 {
+    font-size:25px;
+}
+
+.lista-datos {
+    list-style-position:inside;
+    font-size: 17px;
+    align-items: center;
+}
+.lista-datos li {
+    padding:10px;
+}
+.lista-datos img {
+    width: 20px;
+}
+
+
+.logos-redes img {
+    width:20px;
+}
+
+.logos-redes {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: left;
+    gap:8px;
+}
+
+.footer-bottom { 
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    gap:5px;
+}
+
+.footer-bottom img {
+    width: 200px;
+}
+
+.footer-bottom p {
+    font-size: 15px;
 }
