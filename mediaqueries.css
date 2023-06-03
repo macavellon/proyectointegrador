@@ -1,0 +1,134 @@
+@media (max-width: 992px) {
+    .navbar {
+        gap: 5px;
+
+    }
+
+    .listbar {
+    position: absolute;
+    top: 65px;
+    left: 60%;
+    width: 40%;
+    font-weight: 600;
+    flex-direction: column;
+    background: rgb(55, 49, 88);
+    border: 2px solid blanchedalmond;
+    border-top: 0;
+    border-radius: 0 0 20px 20px;
+    align-items: flex-start;
+    padding: 45px 30px;
+    gap: 25px;
+    z-index: 2;
+    display: none;
+
+}
+
+.listbar a {
+    font-size:18px;
+}
+
+.menu-label {
+    display: flex;
+    cursor: pointer;
+    align-items: left;
+    justify-content: center;
+    text-align: center;
+}
+
+.menu-icon {
+    padding:0 0 5px 0;
+    font-weight: 600;
+    font-size: 20px;
+    color: blanchedalmond;
+
+}
+
+.menu-icon:hover {
+    color:yellowgreen;
+}
+
+#menu-toggle:checked+.listbar {
+    display: flex ;
+}
+
+
+
+@media (max-width: 740px) {
+
+#hero img {
+display:none;
+}
+
+
+.info-hero {
+    width: 100%;
+    align-items: center;
+    width: 100%;
+}
+
+#info, #info-cards , #servicios {
+    align-items: center; 
+    justify-content: center;
+}
+
+
+
+#servicios h2 {
+    font-size: 30x;
+}
+
+.servicios-container {
+    gap:15px;
+    width: 100%;
+}
+
+.servicios-cards img {
+    display:none;
+}
+
+.servicios-cards h3 {
+    font-size: 16px;
+    
+}
+
+.servicios-cards h4 {
+    font-size:18px;
+
+}
+
+.btn-add {
+    font-size: 14px;
+    padding: 8px;
+}
+
+.contacto-top-info {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.contacto-top-info img {
+    display: none;
+}
+
+
+#form-contacto {
+    background-color:blueviolet;
+    display:flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    margin: 120px;
+    width: 300px;
+    height: 380px;
+    padding:20px;
+    border-radius: 20px;
+    gap:5px;
+
+
+#form-contacto h2{
+    font-size: 20px;
+
+}
+
+}

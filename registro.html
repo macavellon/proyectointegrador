@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Consultas</title>
+    <link rel="stylesheet" href="registro.css">
+</head>
+<body>
+    <div class="registro-container">
+        <h1>Formulario de Registro</h1>
+        <label for="nombre" class="datos-label">Nombre:  <input type="text" id="nombre" placeholder="Ingresa tu Nombre"></label>
+        <label for="apellido" class="datos-label">Apellido: <input type="text" id="apellido" placeholder="Ingresa tu Apellido"></label>
+        <label for="edad" class="datos-label">Edad: <input type="number" id="edad" placeholder="Ingresa tu edad"></label>
+        <label for="email" class="datos-label">Email: <input type="email" id="email" placeholder="Ingresa tu email"></label>
+        <label for="telefono" class="datos-label">Telefono: <input type="tel" id="telefono" placeholder="Ingresa tu numero"></label>
+        <div class="divsexo">
+            <h5>Sexo: </h5>
+            <input type="radio" name="sexo" id="femenino"/>
+            <label for="femenino" name="sexo" id="femenino">F</label>
+            <input type="radio" name="sexo" id="masculio"/>
+            <label for="masculino" name="sexo" id="masculino">M</label>
+            <input type="radio" name="sexo" id="otro"/>
+            <label for="otro" name="sexo" id="otro">Otro</label>
+        </div>
+        <label for="password" class="datos-label">Contraseña: <input type="password" id="password" placeholder="Ingresa una contraseña"></label>
+        <div class="btn">
+            <a href="#registrok"><button class="btn-r">Registrarse</button></a>
+            <a href="index.html"><button class="btn-r">Volver</button></a>
+        </div>
+        <div id="registrok" class="overlayform2">
+            <h2>Registro exitoso</h2>
+            <a href="index.html"><button class="btn-r">Volver</button></a>
+            
+        </div>
+            
+
+</body>
+</html>

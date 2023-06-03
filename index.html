@@ -6,41 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio 2 Nucba</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>  
     <header>
         <div class="logo">
-            <img src="./assets/perrito.png" alt="" width="60px" height="60px">
-            <img src="./assets/logo.png" alt="" width="180px" height="60px">
+            <img src="./assets/logo.png" alt="logo">
         </div>
         <nav class="navbar">
+            <label for="menu-toggle" class="menu-label">
+                <i class="fa-solid fa-bars menu-icon"></i>
+            </label>
+            <input type="checkbox" id="menu-toggle"/>
             <ul class="listbar">
-                <li class="listlink"><a class="linkbar" href="di">Home</a></li>
-                <li class="listlink"><a class="linkbar" href="di">Productos</a></li>
-                <li class="listlink"><a class="linkbar" href="di">Promociones</a></li>
-                <li class="listlink"><a class="linkbar" href="di">Contacto</a></li>
+                <li class="listlink"><a class="linkbar" href="#hero">Home</a></li>
+                <li class="listlink"><a class="linkbar" href="#info-cards">Nosotros</a></li>
+                <li class="listlink"><a class="linkbar" href="#servicios">Servicios</a></li>
+                <li class="listlink"><a href="#contacto" class="linkbar" >Contacto</a></li>
             </ul>
-            <img src="./assets/carrito.png" alt="carrito" class="carrito">
+            <div class="login-signup">
+                <a href="login.html"><i class="fa-solid fa-right-to-bracket logicon"><span class="tooltiptext">Inicia sesión</span></i></a>
+                <a href="registro.html"><i class="fa-solid fa-user-plus logicon"><span class="tooltiptext">Registrate</span></i></a>
+            </div>    
         </nav>
     </header>
 
     <main>
         <section id="hero">
             <div class="info-hero">
-                <h1>Acá encontrarás todo para tu mascota</h1>
-                <h2>Todo lo que necesitás para tu amigo más
-                    peludo lo vas a encontrar en nuestra tienda online y al mejor precio garantizado.</h2>
-                <div class="info-hero-buttoms">
-                    <a href="#">Nuestras Ofertas</a>
-                </div>
+                <h1>El mejor servicio de peluqueria canina.</h1>
+                <h2>Ofrecemos un servicio de baño y/o corte a domicilio a tu comodidad y la de tu mejor amigo de cuatro patas.</h2>
             </div>
             <img src="./assets/hero-card.png" alt="Imagen perro y niño portada">        
         </section>
 
         <section id="info">
-            <h3>Somos una PetShop con locales en los barrios de Villa Crespo y Palermo con llegada a todo el pais gracias a nuestra tienda online.
-                Ofrecemos toda la variedad de alimento, accesorios y medicamentos para tu mascota. Garantizamos el mejor precio
-                del mercado, suscribite a nuestro <a href="#">newsletter</a> para enterarte de todas nuestras ofertas.
+            <h3>Somos una empresa de servicio de baños y/o corte a domicilio para perros con una flota de 10 moviles en toda la ciudad
+                 de Buenos Aires. Si, leiste bien, ofrecemos un baño a domicilio dentro de nuestro movil, sin ensuciar ni un
+                 metro cuadrado de tu casa. <a href="#">Logeate</a> en nuestra pagina para conocer nuestros preicos y acceder a la membresia.
             </h3>
         </section>
 
@@ -48,62 +54,96 @@
                 <h2>Todo lo que nos representa</h2>
             <div class="cards-container">
                 <div class="cards-cards">
-                    <img src="./assets/gato-card.jpg" alt="Icono gato-card">
+                    <img src="./assets/perro-card.jpg" alt="Icono gato-card">
                     <h3>Trayectoria</h3>
-                    <p>Contamos con casi 30 años de experiencia en el rubro durante cuales nos siguen acompañando nuestros clientes. </p>
+                    <p>Contamos con casi 30 años de experiencia en el rubro durante los cuales nos siguen acompañando nuestros clientes. </p>
                 </div>
                 <div class="cards-cards">
                     <img src="./assets/pata-card.jpg" alt="Icono pata-card">
-                    <h3>Variedad</h3>
-                    <p>Ofrecemos una amplia variedad de alimento balanceado y accesorios para gatos y perros.</p>
+                    <h3>Confianza</h3>
+                    <p>Te damos toda la libertad de poder presenciar el baño de tu mascota para que te quedes tranquilo que lo realizamos con todo el amor.</p>
                 </div>
                 <div class="cards-cards">
                     <img src="./assets/perro-card.jpg" alt="Icono perro-card">
                     <h3>Calidad</h3>
-                    <p>Ofrecemos variedad sin descuidar la calidad. Las mejores marcas y gama de productos nos acompañan. .</p>
+                    <p>Utilizamos productos de calidad  y si tu mascota tiene algun tipo de alergia nos aseguramos de realizar el baño con un shampoo especial para ello.</p>
                 </div>
             </div>
 
         </section>
 
+        <section id="servicios">
+            <h2>Nuestros servicios</h2>
+            <div class="servicios-container">
+                <div class="servicios-cards">
+                    <h3>Baño</h3>
+                    <img src="./assets/baño-card.png" alt="Imagen baño">
+                    <h4>$ 800 </h4>
+                    <button class="btn-add" href="#">Contratar</button>
+                </div>
+                <div class="servicios-cards">
+                    <h3>Corte</h3>
+                    <img src="./assets/corte-card.jpg" alt="Imagen corte">
+                    <h4>$ 1000</h4>
+                    <button class="btn-add" href="#" >Contratar</button>
+                </div>    
+                <div class="servicios-cards">
+                    <h3>Baño y corte</h3>
+                    <img src="./assets/bañoycorte-card.jpg" alt="Imagen Baño y Corte">
+                    <h4>$ 1500</h4>
+                    <button class="btn-add" href="#">Contratar</button>
+                </div>
+        </div>
 
+    </section>
 
-        <footer>
-            <div class="footer-top">
-                <div class="footer-top-info">
-                    <div class="contacto">
+            <section id="contacto">
+                <div class="contacto-top-info">
+                    <div class="contacto-container">
                         <h3>Contactanos</h3>
-                            <div class="contacto-contenedor">
                                 <div class="contacto-datos">
-                                    <h4>Local Villa Crespo</h4>
+                                    <h4>Oficina Villa Crespo</h4>
                                     <ul class="lista-datos">
-                                        <li><img src="./assets/icono-direccion.png" alt="icono-direccion">Aguirre 273</li>
-                                        <li><img src="./assets/icono-mail.png" alt="icono-mail">petshoplovevc@petshoplove.com.ar</li>
-                                        <li><img src="./assets/icono-wsp.png" alt="icono-wsp">11-33012544</li>
+                                        <li><img src="./assets/icono-direccion.png" alt="icono-direccion"> Aguirre 273</li>
+                                        <li><img src="./assets/icono-mail.png" alt="icono-mail"> pelucan@pelucan.com.ar</li>
+                                        <li><img src="./assets/icono-wsp.png" alt="icono-wsp"> 11-33012544</li>
+                                        <li><a href="#form-contacto" class="btn-consulta">Dejanos tu consulta</a></li>
                                     </ul>
-                                    
                                 </div>
-                                <div class="contacto-datos">
-                                    <h4>Local Palermo</h4>
-                                    <ul class="lista-datos">
-                                        <li><img src="./assets/icono-direccion.png" alt="icono-direccion">Bonpland 3273</li>
-                                        <li><img src="./assets/icono-mail.png" alt="icono-mail">petshoploveplm@petshoplove.com.ar</li>
-                                        <li><img src="./assets/icono-wsp.png" alt="icono-wsp">11-33012566</li>
-                                    </ul>
-                                </div>    
-                            </div>
-                    </div>
                         <div class="logos-redes">
                             <a href="#"><img src="./assets/icono-twitter.png" alt="icono-twitter" ></a> 
-                            <a href="#"> <img src="./assets/icono-instagram.png" alt="icono-instagram" ></a>
+                            <a href="#"><img src="./assets/icono-instagram.png" alt="icono-instagram" ></a>
                             <a href="#"><img src="./assets/icono-facebook.png" alt="icono-facebook" ></a>
                         </div>
-                </div>    
-                <img src="./assets/imagen-vete.jpg" alt="imagen-veterinaria" >                        
-            </div>
+                    </div>
+                    <img src="./assets/imagen-vete.jpg" alt="imagen-baño">   
+                </div> 
+                
+                <div id="form-contacto" class="overlayform">
+                    <h2>Completa tus Datos</h2>
+                    <label for="nombre" class="datos-label">Nombre:  <input type="text" id="nombre" placeholder="Ingresa tu Nombre"></label>
+                    <label for="apellido" class="datos-label">Apellido: <input type="text" id="apellido" placeholder="Ingresa tu Apellido"></label>
+                    <label for="edad" class="datos-label">Edad: <input type="number" id="edad" placeholder="Ingresa tu edad"></label>
+                    <label for="email" class="datos-label">Email: <input type="email" id="email" placeholder="Ingresa tu email"></label>
+                    <div class="divsexo">
+                        <h5>Sexo: </h5>
+                        <input type="radio" name="sexo" id="femenino"/>
+                        <label for="femenino" name="sexo" id="femenino">F</label>
+                        <input type="radio" name="sexo" id="masculio"/>
+                        <label for="masculino" name="sexo" id="masculino">M</label>
+                        <input type="radio" name="sexo" id="otro"/>
+                        <label for="otro" name="sexo" id="otro">Otro</label>
+                    </div>
+                    <label for="texto" class="form-caja">Ingresá tu consulta</label>
+                    <textarea id="texto" cols="30" rows="10"></textarea>
+                    <a class="form-cerrar" href="#popup">&times;</a>
+                    <div class="box-enviar"><a class="form-enviar" href="#popup">Enviar</a></div>
+                </div>
+        </section>          
+        <footer>                                        
             <div class="footer-bottom">
                 <img src="./assets/logo.png" alt="imagen-logo" >
-                <p>CopyRight-PetShopLove</p>
+                <p>CopyRight-PeluCan</p>
             </div>
     
         </footer>
