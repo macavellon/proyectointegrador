@@ -66,16 +66,42 @@ display:none;
     width: 100%;
 }
 
-#info, #info-cards , #servicios {
+#info, #info-cards , #servicios  {
     align-items: center; 
     justify-content: center;
+    text-align: center;
+    
+}
+
+.info-hero h1 , #info-cards h2, #servicios h2, .contacto-container h3 {
+   font-size: 25px;    
+}
+
+.info-hero h2 {
+    font-size:15px;
+}
+#info h3 {
+    font-size:15px;
+}
+
+/* Seccion cards  */
+
+.cards-cards {
+    width:220px ;
+}
+.cards-cards h3 {
+    font-size: 20px;
+} 
+
+.cards-cards p {
+    font-size: 14px;
 }
 
 
 
-#servicios h2 {
-    font-size: 30x;
-}
+
+/* Seccion servicios */
+
 
 .servicios-container {
     gap:15px;
@@ -96,10 +122,13 @@ display:none;
 
 }
 
+
 .btn-add {
     font-size: 14px;
     padding: 8px;
 }
+
+/* Seccion contacto */
 
 .contacto-top-info {
     width: 100%;
@@ -111,23 +140,28 @@ display:none;
     display: none;
 }
 
+.contacto-datos h4  {
+    font-size: 18px;
+}
 
-#form-contacto {
-    background-color:blueviolet;
-    display:flex;
-    flex-direction: column;
-    align-items: left;
+.lista-datos {
+    font-size:14px;
+}
+
+.btn-consulta {
+    font-size: 14px;
+}
+.overlayform {
+    position:relative;
+    transition:opacity 500ms;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    visibility: hidden;
+    opacity:0;
     justify-content: center;
-    margin: 120px;
-    width: 300px;
-    height: 380px;
-    padding:20px;
-    border-radius: 20px;
-    gap:5px;
+    color:rgb(228, 139, 236);
 
-} 
-
-#form-contacto h2{
-    font-size: 20px;
 
 }
